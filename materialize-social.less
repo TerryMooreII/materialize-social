@@ -29,21 +29,24 @@
     }
 }
 
-
 .col{
     &.social {
         width:100%;
         text-align: left;
 
         i.fa-fw {
-            width: 3rem;
+            width: 3.2rem;
         }
     }
 }
 
 .social(@color-bg, @color: #fff) {
     background-color: @color-bg;
-    color:@color;
+    color:@color !important;
+    i{
+      color:@color !important;
+    }
+
     &:hover{
       background-color: lighten(@color-bg, 10%) !important;
     }
