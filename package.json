@@ -1,0 +1,30 @@
+{
+  "name": "materialize-social",
+  "version": "1.0.0",
+  "description": "Social login buttons with font-awesome icons for MaterializeCSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/less/bin/lessc materialize-social.less > materialize-social.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "icon",
+    "materialize",
+    "materializecss",
+    "css",
+    "sass",
+    "less",
+    "material",
+    "material",
+    "design"
+  ],
+  "author": "Terry Moore II",
+  "license": "MIT",
+  "dependencies": {
+    "fontawesome": "^4.7.2",
+    "materializecss": "^1.0.11"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}

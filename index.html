@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Material Social</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="materialize-social.css">
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Material-Social</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://github.com/TerryMooreII">Github</a></li>
+                <li><a href="https://twitter.com/terrymooreii">Twitter</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Materialize Social</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Social Login Buttons for MaterailizeCSS with Font-Awesome</h5>
+            </div>
+            <div class="row center">
+                <a href="https://github.com/TerryMooreII" id="download-button" class="btn-large waves-effect waves-light orange">View Code on Github</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m6 all">
+
+                </div>
+
+                <div class="col s12 m6">
+                    <a class="waves-effect waves-light btn social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a class="waves-effect waves-light btn-large social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a class="waves-effect waves-light btn col s12 social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a class="waves-effect waves-light btn-floating social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a class="waves-effect waves-light btn-floating btn-large social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
+                    <a class="waves-effect waves-light social-icon btn-large facebook" (click)="login()"><i class="fa fa-facebook"></i></a>
+                    <a class="waves-effect waves-light social-icon btn github" (click)="login()"><i class="fa fa-github"></i></a>
+                    <div class="fixed-action-btn horizontal click-to-toggle">
+                        <a class="btn-floating btn-large red">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a class="waves-effect waves-light btn-floating social google" (click)="login()"><i class="fa fa-google"></i></a>
+                            </li>
+                            <li>
+                                <a class="waves-effect waves-light btn-floating facebook" (click)="login()"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+
+        <div class="section">
+
+        </div>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="https://twitter.com/terrymooreii">Terry Moore II</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <script type="text/javascript">
+        var social = [
+            'adn',
+            'bitbucket',
+            'dropbox',
+            'facebook',
+            'flickr',
+            'foursquare',
+            'github',
+            'google',
+            'instagram',
+            'linkedin',
+            'windows ',
+            'odnoklassniki',
+            'openid',
+            'pinterest',
+            'reddit',
+            'soundcloud',
+            'tumblr',
+            'twitter',
+            'vimeo',
+            'vk',
+            'yahoo'
+        ]
+        var buttons = '';
+        $.each(social, function(index, network) {
+            buttons += '<a class="waves-effect waves-light btn social col s12 ' + network + '" (click)="login()"><i class="fa fa-' + network + '"></i> Sign in with ' + network + '</a>'
+        });
+        $('.all').html(buttons);
+    </script>
+
+</body>
+
+</html>

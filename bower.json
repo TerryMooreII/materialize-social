@@ -1,0 +1,17 @@
+{
+  "name": "materialize-social",
+  "main": [
+    "materialize-social.css",
+    "materialize-social.less"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "assets",
+    "index.html",
+    "LICENCE"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.1",
+    "font-awesome": "^4.7.0"
+  }
+}
