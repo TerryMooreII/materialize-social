@@ -1,10 +1,12 @@
 {
+  "author": "Terry Moore II",
   "name": "materialize-social",
   "main": [
     "materialize-social.css",
     "materialize-social.less"
   ],
   "license": "MIT",
+  "homepage": "https://terrymooreii.github.io/materialize-social/",
   "ignore": [
     "css",
     "fonts",
