@@ -54,27 +54,73 @@
                 </div>
 
                 <div class="col s12 m6">
-                    <a class="waves-effect waves-light btn social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
-                    <a class="waves-effect waves-light btn-large social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
-                    <a class="waves-effect waves-light btn col s12 social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
-                    <a class="waves-effect waves-light btn-floating social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
-                    <a class="waves-effect waves-light btn-floating btn-large social google" (click)="login()"><i class="fa fa-google"></i> Sign in with Google</a>
-                    <a class="waves-effect waves-light social-icon btn-large facebook" (click)="login()"><i class="fa fa-facebook"></i></a>
-                    <a class="waves-effect waves-light social-icon btn github" (click)="login()"><i class="fa fa-github"></i></a>
+
+                  <ul class="collection with-header">
+                  <li class="collection-header"><h4>Examples</h4></li>
+
+                  <li class="collection-item">
+                    <h6>Sign in <code>.btn</code></h6>
+                    <a class="waves-effect waves-light btn social google"><i class="fa fa-google"></i> Sign in with Google</a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6>Large Sign in .btn-large</h6>
+                    <a class="waves-effect waves-light btn-large social google"><i class="fa fa-google"></i> Sign in with Google</a>
+
+                  </li>
+                  <li class="collection-item row">
+                    <h6>Full with Sign in with col s12 or any other grid size</h6>
+                    <a class="waves-effect waves-light btn col s12 social google"><i class="fa fa-google"></i> Sign in with Google</a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6>Floating sign in with .btn-floating</h6>
+                    <a class="waves-effect waves-light btn-floating social google"><i class="fa fa-google"></i> Sign in with Google</a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6>Large floating sign in with .btn-floating and .btn-large</h6>
+                    <a class="waves-effect waves-light btn-floating btn-large social google"><i class="fa fa-google"></i> Sign in with Google</a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6>Just the icon with .social-icon and .btn</h6>
+                    <a class="waves-effect waves-light social-icon btn google"><i class="fa fa-google"></i></a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6>Large icon with .social-icon and .btn-large</h6>
+                    <a class="waves-effect waves-light social-icon btn-large google"><i class="fa fa-google"></i></a>
+
+                  </li>
+                  <li class="collection-item">
+                    <h6></h6>
                     <div class="fixed-action-btn horizontal click-to-toggle">
                         <a class="btn-floating btn-large red">
                             <i class="material-icons">menu</i>
                         </a>
                         <ul>
                             <li>
-                                <a class="waves-effect waves-light btn-floating social google" (click)="login()"><i class="fa fa-google"></i></a>
+                                <a class="waves-effect waves-light btn-floating social google"><i class="fa fa-google"></i></a>
                             </li>
                             <li>
-                                <a class="waves-effect waves-light btn-floating facebook" (click)="login()"><i class="fa fa-facebook"></i></a>
+                                <a class="waves-effect waves-light btn-floating facebook"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                            <li>
+                                <a class="waves-effect waves-light btn-floating github"><i class="fa fa-github"></i></a>
+                            </li>
                         </ul>
                     </div>
+                  </li>
+                </ul>
+
+
+
+
+
+
+
+
                 </div>
             </div>
 
@@ -126,7 +172,7 @@
         ]
         var buttons = '';
         $.each(social, function(index, network) {
-            buttons += '<a class="waves-effect waves-light btn social col s12 ' + network + '" (click)="login()"><i class="fa fa-' + network + '"></i> Sign in with ' + network + '</a>'
+            buttons += '<div class="row"><a class="waves-effect waves-light btn social col s12 ' + network + '"><i class="fa fa-fw fa-' + network + '"></i> Sign in with ' + network + '</a></div>'
         });
         $('.all').html(buttons);
     </script>
