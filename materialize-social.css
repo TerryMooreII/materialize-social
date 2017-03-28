@@ -145,6 +145,16 @@
 .microsoft:hover {
   background-color: #5590f0 !important;
 }
+.windows {
+  background-color: #2672ec;
+  color: #fff !important;
+}
+.windows i {
+  color: #fff !important;
+}
+.windows:hover {
+  background-color: #5590f0 !important;
+}
 .odnoklassniki {
   background-color: #f4731c;
   color: #fff !important;
