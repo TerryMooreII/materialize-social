@@ -1,6 +1,6 @@
 {
   "name": "materialize-social",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Social login buttons with font-awesome icons for MaterializeCSS",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,9 @@
   ],
   "author": "Terry Moore II",
   "repository": {
-        "type": "git",
-        "url": "https://github.com/TerryMooreII/materialize-social.git"
-    },
+    "type": "git",
+    "url": "https://github.com/TerryMooreII/materialize-social.git"
+  },
   "license": "MIT",
   "dependencies": {
     "fontawesome": "^4.7.2",
