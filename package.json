@@ -1,6 +1,6 @@
 {
   "name": "materialize-social",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Social login buttons with font-awesome icons for MaterializeCSS",
   "main": "index.js",
   "scripts": {
